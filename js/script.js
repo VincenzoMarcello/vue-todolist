@@ -24,5 +24,10 @@ createApp({
     };
   },
 
-  methods: {},
+  methods: {
+    // # METODO CHE ELIMINA IL TODO ASSOCIATO
+    deleteTodo(index) {
+      this.todoList.splice(index, 1);
+    },
+  },
 }).mount("#app");

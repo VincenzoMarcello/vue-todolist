@@ -12,7 +12,7 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 ### MILESTONE 2
 
-Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
+Visualizzare a fianco ad ogni item una "x": cliccando su di essa, il todo viene rimosso dalla lista.
 
 ### MILESTONE 3
 
@@ -27,3 +27,4 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 
 - Stampo all'interno di una lista HTML un item per ogni todo attraverso il ciclo v-for
 - Usiamo un controllo che sbarra il testo in base alla proprietà done dei vari oggetti
+- Creiamo un tasto che elimina il todo associato tramite una funzione

@@ -4,3 +4,8 @@ li {
   margin: 10px 0;
   background-color: rgb(135, 177, 237);
 }
+
+.todo-delete {
+  float: right;
+  cursor: pointer;
+}
