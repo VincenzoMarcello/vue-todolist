@@ -28,3 +28,7 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 - Stampo all'interno di una lista HTML un item per ogni todo attraverso il ciclo v-for
 - Usiamo un controllo che sbarra il testo in base alla proprietà done dei vari oggetti
 - Creiamo un tasto che elimina il todo associato tramite una funzione
+- Creiamo un oggetto newTask che ci servirà per collegarlo a un input
+- Creiamo un input e un pulsante per aggiungere un nuovo todo
+- Dichiariamo una nuova funzione per aggiungere un nuovo todo
+- Aggiungiamo un controllo se l'input value è vuoto

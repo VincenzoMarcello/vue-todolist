@@ -35,6 +35,28 @@
           <h3>TO DO LIST</h3>
         </div>
 
+        <!-- COLLEGO L'INPUT A UNA OGGETTO IN DATA -->
+        <div class="input-group my-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Cosa devi fare?"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            v-model="newTask.text"
+          />
+          <!-- BUTTON CHE AGGIUNGE UN TODO -->
+          <!-- USO UN METODO PER AGGIUNGERE UN TODO -->
+          <button
+            class="btn btn-outline-success"
+            type="button"
+            id="button-addon2"
+            @click="addNewTodo()"
+          >
+            Aggiungi
+          </button>
+        </div>
+
         <ul>
           <!-- STAMPO ALL'INTERNO DI UNA LISTA IN ITEM PER OGNI TODO ATTRAVERSO IL CICLO FOR -->
           <!-- USIAMO UN CONTROLLO CHE AGGIUNGE UNA CLASSE CHE SBARRA IL TESTO SE E' TRUE -->
