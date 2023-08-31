@@ -24,8 +24,16 @@
         <div class="text-center mt-5 border">
           <h3>TO DO LIST</h3>
         </div>
+
         <ul>
-          <li>{{ todoList[0].text }}</li>
+          <!-- STAMPO ALL'INTERNO DI UNA LISTA IN ITEM PER OGNI TODO ATTRAVERSO IL CICLO FOR -->
+          <!-- USIAMO UN CONTROLLO CHE AGGIUNGE UNA CLASSE CHE SBARRA IL TESTO SE E' TRUE -->
+          <li
+            :class="todoElement.done == true ? 'text-decoration-line-through' : ''"
+            v-for="todoElement in todoList"
+          >
+            {{ todoElement.text }}
+          </li>
         </ul>
       </div>
     </div>
