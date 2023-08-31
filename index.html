@@ -63,6 +63,7 @@
           <li
             :class="todoElement.done == true ? 'text-decoration-line-through' : ''"
             v-for="(todoElement,index) in todoList"
+            @click="checked(index)"
           >
             {{ todoElement.text }}
 
