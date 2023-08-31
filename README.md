@@ -32,3 +32,4 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 - Creiamo un input e un pulsante per aggiungere un nuovo todo
 - Dichiariamo una nuova funzione per aggiungere un nuovo todo
 - Aggiungiamo un controllo se l'input value è vuoto
+- Faccio una funzione che intercetta l'enter

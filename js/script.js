@@ -55,5 +55,18 @@ createApp({
       // # SVUOTO L'INPUT DOPO CHE HO AGGIUNTO IL TODO
       this.newTask.text = "";
     },
+
+    // # BONUS 1 FACCIO UNA FUNZIONE CHE INTERCETTA L'ENTER
+    handleKeyUp(event) {
+      console.log(event);
+
+      // # SE IL TASTO PREMUTO E' L'ENTER ESEGUO IL METODO
+      if (event.key == "Enter") this.addNewTodo();
+    },
+  },
+
+  // # FACCIO IN MODO CHE L'INTERA FINESTRA ASCOLTI I TASTI PREMUTI
+  created() {
+    window.addEventListener("keyup", this.handleKeyUp);
   },
 }).mount("#app");
