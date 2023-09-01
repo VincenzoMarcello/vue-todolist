@@ -56,8 +56,8 @@
             Aggiungi
           </button>
         </div>
-
-        <ul>
+        <!-- AGGIUNGO UN COTROLLO SE NON CI SONO ELEMENTI DELLA LISTA -->
+        <ul v-if="todoList.length">
           <!-- STAMPO ALL'INTERNO DI UNA LISTA IN ITEM PER OGNI TODO ATTRAVERSO IL CICLO FOR -->
           <!-- USIAMO UN CONTROLLO CHE AGGIUNGE UNA CLASSE CHE SBARRA IL TESTO SE E' TRUE -->
           <li
@@ -71,11 +71,13 @@
             <span class="todo-delete">
               <i
                 class="fa-regular fa-circle-xmark fs-4"
-                @click="deleteTodo(index)"
+                @click.stop="deleteTodo(index)"
               ></i>
             </span>
           </li>
         </ul>
+        <!--ALLORA MANDO UN MESSAGGIO CHE DICE CHE NON CI SONO ELEMENTI NELLA LISTA  -->
+        <h4 v-else>Non hai cose da fare</h4>
       </div>
     </div>
 
