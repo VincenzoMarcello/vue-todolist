@@ -56,12 +56,6 @@ createApp({
       this.newTask.text = "";
     },
 
-    // # BONUS 1 FACCIO UNA FUNZIONE CHE INTERCETTA L'ENTER
-    handleKeyUp(event) {
-      // # SE IL TASTO PREMUTO E' L'ENTER ESEGUO IL METODO
-      if (event.key == "Enter") this.addNewTodo();
-    },
-
     // # BONUS 2 BARRO IL TODO SELEZIONATO
     checked(index) {
       this.todoList[index].done = true;
